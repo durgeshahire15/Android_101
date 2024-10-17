@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">First Application</string>
+    <string name="welcome_to_the_android_programming">Welcome to the android programming!</string>
+    <string name="button">Button</string>
+    <string name="welcome_to_android_channel">Welcome to Android Channel</string>
+
+</resources>
