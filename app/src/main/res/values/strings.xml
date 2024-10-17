@@ -5,5 +5,7 @@
     <string name="welcome_to_android_channel">Welcome to Android Channel</string>
     <string name="button_constrained">Button Constrained</string>
     <string name="first_button">First Button</string>
+    <string name="show_toast">Show Toast</string>
+    <string name="show_alert_box">Show Alert Box</string>
 
 </resources>
