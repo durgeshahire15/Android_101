@@ -7,5 +7,6 @@
     <string name="first_button">First Button</string>
     <string name="show_toast">Show Toast</string>
     <string name="show_alert_box">Show Alert Box</string>
+    <string name="menu_display">Menu Display</string>
 
 </resources>
