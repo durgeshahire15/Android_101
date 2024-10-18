@@ -40,7 +40,10 @@ class MainActivity2 : AppCompatActivity() {
             alert.setNeutralButton("cancel"){dialogInterface, which->
                 Toast.makeText(this, "You got it deleted",Toast.LENGTH_SHORT).show()
             }
-            alert.show()
+
+            val box = alert.create()
+            box.setCancelable(false)
+            box.show()
         }
     }
 }
