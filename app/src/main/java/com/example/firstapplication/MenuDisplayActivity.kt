@@ -1,7 +1,9 @@
 package com.example.firstapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -23,6 +25,23 @@ class MenuDisplayActivity : AppCompatActivity() {
         showPopUp.setOnClickListener{
             customMenu.showMenu(this,it)
         }
+
+        val name =  findViewById<TextView>(R.id.name2)
+        val rollNum =  findViewById<TextView>(R.id.roll2)
+        val fatherName =  findViewById<TextView>(R.id.father2)
+        val phone =  findViewById<TextView>(R.id.phone2)
+
+        val intent = intent
+
+        val names:String? = intent.getStringExtra("name")
+        val fatherNames = intent.getStringExtra("fathersName")
+        val rollNos = intent.getStringExtra("roll")
+        val phones = intent.getStringExtra("phone")
+
+        name.text = "Name : $names"
+        rollNum.text = "Roll No: $rollNos"
+        fatherName.text = "Father's name is $fatherNames"
+        phone.text = "Phoine number is: $phones"
 
     }
 }
