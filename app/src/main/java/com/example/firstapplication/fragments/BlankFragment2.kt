@@ -5,12 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.example.firstapplication.R
-import com.example.firstapplication.databinding.FragmentBlank1Binding
 
-class BlankFragment1 : Fragment() {
-    private lateinit var binding: FragmentBlank1Binding
+class BlankFragment2 : Fragment() {
+    // TODO: Rename and change types of parameters
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -21,15 +20,9 @@ class BlankFragment1 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding =  FragmentBlank1Binding.inflate(inflater, container, false)
-
-        binding.button3.setOnClickListener {
-            Toast.makeText(context, "Testing fragment layout", Toast.LENGTH_SHORT).show()
-        }
-        return binding.root
+        return inflater.inflate(R.layout.fragment_blank2, container, false)
     }
 
     companion object {
-
-    }
+          }
 }

@@ -7,6 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.firstapplication.databinding.ActivityMainBinding
 import com.example.firstapplication.fragments.BlankFragment1
+import com.example.firstapplication.fragments.BlankFragment2
 
 class MainActivity : AppCompatActivity() {
     private val binding by lazy{
@@ -21,10 +22,26 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         var manager = supportFragmentManager
         var tr = manager.beginTransaction()
-        tr.replace(R.id.frameLayout, BlankFragment1())
+        tr.replace(R.id.frameLayout, BlankFragment2())
         tr.commit()
+
+
+        binding.button1.setOnClickListener {
+            var manager = supportFragmentManager
+            var tr = manager.beginTransaction()
+            tr.replace(R.id.frameLayout, BlankFragment1())
+            tr.commit()
+        }
+        binding.button2.setOnClickListener {
+            var manager = supportFragmentManager
+            var tr = manager.beginTransaction()
+            tr.replace(R.id.frameLayout, BlankFragment2())
+            tr.commit()
+        }
+
 
     }
     override fun onResume(){
