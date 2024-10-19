@@ -22,9 +22,6 @@
         </intent-filter></activity>
 
         <activity
-            android:name=".ConstraintLayoutActivity"
-            android:exported="false"></activity>
-        <activity
             android:name=".MainActivity"
             android:exported="true">
 
