@@ -3,5 +3,7 @@
     <string name="welcome_to_the_android_programming">Welcome to the android programming!</string>
     <string name="button">Button</string>
     <string name="welcome_to_android_channel">Welcome to Android Channel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
