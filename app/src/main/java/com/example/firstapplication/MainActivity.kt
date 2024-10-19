@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         profButton.setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
+
         }
     }
     override fun onResume(){
