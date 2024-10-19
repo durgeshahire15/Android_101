@@ -40,6 +40,12 @@ class ImplicitIntent : AppCompatActivity() {
             val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivity(intent)
         }
-        binding.textShare.setOnClickListener {}
+        binding.textShare.setOnClickListener {
+            val text = binding.editText.text.toString()
+            val intent = Intent(Intent.ACTION_SEND)
+            intent.type = "text/plain"
+            intent.putExtra(Intent.EXTRA_TEXT, text)
+            startActivity(Intent.createChooser(intent, "Share via"))
+        }
     }
 }
